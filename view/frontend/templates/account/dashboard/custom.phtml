@@ -1,0 +1,16 @@
+<?php
+
+?>
+<div class="block block-dashboard-info">
+    <div class="block-title"><strong><?= $block->escapeHtml(__('Custom EAV Information')) ?></strong></div>
+    <div class="block-content">
+        <div class="box-content">
+            <p>
+                <img src="<?php echo $block->getAvatar()?>" width="200" height="200" alt="Customer Avatar"/><br>
+                <?= $block->escapeHtml($block->getName()) ?><br>
+                <?= $block->escapeHtml($block->getPhoneNumber()) ?><br>
+                <?= $block->escapeHtml($block->getCustomer()->getEmail()) ?><br>
+            </p>
+        </div>
+    </div>
+</div>
